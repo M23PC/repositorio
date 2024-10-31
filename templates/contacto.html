@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block body %}
+</section>
+<section class="contacto">
+    <h2>Contacto</h2>
+    <center> <div class="contacto_container">
+        <form action ="respuesta" method="post">
+            <h2>Mensaje</h2>
+            <div class="info_contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required>   
+                <label for="email">Email:</label>   
+                <input type="text" name="email" id="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" required></textarea>
+                <button type="submit">Enviar</button> 
+            </div>    
+        </form>
+    </div></center>
+</section>
+{% endblock %}

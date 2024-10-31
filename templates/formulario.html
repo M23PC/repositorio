@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block body %}
+<center><div class="mensaje">
+    <div class="wrap">
+        <h1>Mensaje</h1>
+    </div class="wrap_mensaje">
+        <div>
+            <h3>Hola {{res}}, gracias por visitar mi portafolio y dejar el mensaje {{men}}</h3>
+            <nav>
+            <a href="{{url_for('inicio')}}">Volver</a>
+            </nav>
+        </div>
+</div></center>
+{% endblock %}
